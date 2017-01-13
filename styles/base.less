@@ -1,0 +1,46 @@
+
+// Base
+// -------------------
+
+// Used for global styles
+// Or to override certain Atom core styles
+
+// -------------------
+
+
+body {
+  font-size: @font-size;
+  color: @text-color;
+  background-color: @app-background-color;
+}
+
+atom-pane {
+  border-right: 1px solid @base-border-color;
+  &:last-child {
+    border-right: none;
+  }
+}
+
+
+/*      SCROLLBARZ      */
+::-webkit-scrollbar {
+    width: 5px;
+	height:5px;
+    //background-color:black;
+}
+::-webkit-scrollbar-track {
+    //-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 0px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 0px;
+    //background: fadeout(@brand, 10%);
+    background: fadeout(#444,30%);
+    box-shadow:0px 0px 10px fadeout(@killer-red,80%);
+    //-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+::-webkit-scrollbar-thumb:window-inactive {
+	//background: fadeout(@black, 70%);
+    //box-shadow:0px 0px 10px white;
+    background:fadeout(@killer-black,20%);
+}
