@@ -12,13 +12,13 @@
 }
 
 .tree-view {
-  color: @killer-black;
-  // border-right: 1px solid @killer-red;
-  background-color: @killer-grey;
+  color: @killer-grey;
+  border-right: 1px solid rgba(255,255,255,0.1);
+  background-color: fadeout(@killer-black, 20%);
 
   .list-item {
     margin: 3px 0px;
-    border-bottom:1px solid #999;
+    border-bottom:1px solid #1b1b1b;
     transition: all 0.5s;
     &:hover {
       transform: scale(1.05);
