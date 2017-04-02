@@ -6,8 +6,9 @@
 
 
 .btn {
-  color: lighten(@text-color, 6%);
+  color: lighten(@text-color, 0%);
   background-color: @button-background-color;
+  transition: all 0.4s;
   &:hover,
   &:focus {
     color: @text-color-highlight;
@@ -25,6 +26,8 @@
   &:focus:active {
     outline: none;
   }
+  border-radius: 2px;
+  line-height: 1.3em;
 }
 
 
@@ -59,5 +62,5 @@
 // Button Group -----------------------
 
 .btn-group > .btn {
-  border-color: hsla(0,0%,0%,.2);;
+  border-color: hsla(0,0%,0%,.2);
 }

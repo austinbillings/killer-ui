@@ -13,21 +13,24 @@
 
 .tree-view {
   color: @killer-grey;
-  border-right: 1px solid rgba(255,255,255,0.1);
-  background-color: lighten(@killer-black, 5%);
+  // border-right: 1px solid rgba(255,255,255,0.1);
+  background-color: lighten(@killer-black, 4%);
 
   .list-item {
-    margin: 3px 0px;
-    border-bottom:1px solid #1b1b1b;
+    margin: 4px 0px;
+    text-shadow: none;
     transition: all 0.2s;
+    
     &:hover {
       transform: scale(1.05);
       font-weight:800;
     }
   }
+  
   .list-item.selected {
-    color: white;
+    color: @killer-grey;
     transform: none;
+    
     &:hover {
       transform: none;
     }

@@ -7,18 +7,25 @@
 
 .tab-bar {
   background-color: @killer-black;
+  padding: 0px 10px 0px;
+  overflow: hidden;
+  min-height: 39px;
   border-bottom: 1px solid fadeout(@tab-border-color, 10%);
 
   .tab {
-    color: @text-color;
     height: @tab-height + 4px;
+    margin-top: 4px;
+    margin-right:2px;
+    
+    position: relative;
+    
+    border-radius: 0px;
+    cursor: pointer;
+    
+    color: @text-color;
     text-align: center;
     line-height: @tab-height + 4px;
     font-size: 12.5px;
-    cursor: pointer;
-    border-radius: 0px;
-    border-right:1px solid rgba(255,255,255,0.2);
-    //border-right: 1px solid @tab-border-color;
     background-color: @tab-background-color;
     transition: all 0.3s;
     &.active {
@@ -30,7 +37,7 @@
       }
     }
     &:hover {
-      transform: scale(0.95);
+      top: 1px;
       color: white;
       background-color: lighten(@killer-black, 7%);
     }
