@@ -4,7 +4,6 @@
 
 // Mini Editors are the "text inputs" used in find+replace or in the settings.
 
-
 atom-text-editor[mini] {
   padding-left: @component-padding/2;
   color: @killer-blue;
@@ -21,7 +20,7 @@ atom-text-editor[mini] {
       color: @text-color-subtle;
     }
     .selection .region {
-      background-color: #111;
+      background-color: #2a2a2a;
     }
   }
 }
@@ -30,18 +29,17 @@ atom-text-editor .gutter .line-number {
   padding-left: 10px !important;
   padding-right: 0px;
   
-  
   &.cursor-line {
     background-color: @killer-black;
   }
-  
-  &.git-line-modified {
-    padding-left: 15px;
-    border-left-color: fadeout(@killer-red, 50%);
-  }
 }
 
-atom-text-editor::shadow .gutter, atom-text-editor .gutter {
+.git-line-modified {
+  padding-left: 15px;
+  border-left-color: fadeout(@killer-red, 40%) !important;
+}
+
+atom-text-editor .gutter {
     color: darken(@killer-grey, 20%);
     font-weight: 100;
     padding-left: 3px;
@@ -60,6 +58,5 @@ atom-text-editor::shadow .gutter, atom-text-editor .gutter {
 }
 
 atom-text-editor {
-  border-top: 5px solid transparent;
   line-height: 1.6em;
 }

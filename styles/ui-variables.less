@@ -1,4 +1,3 @@
-
 // UI Variables
 // -------------------
 
@@ -10,7 +9,7 @@
 // Try to edit some of the values below to see your theme change.
 // A good start is to change the color of the `@base-background-color` variable.
 
-@killer-red: #bc3424;
+@killer-red: #bb131d;// #b30826; //#bc3424;
 @killer-gold: #e3a01a;
 @killer-black: #0b0c0d;
 @killer-green: #087041;
@@ -18,30 +17,41 @@
 @killer-blue: #246962;
 @killer-white: #c9c4c5;
 
+// Tab / Top Area
+@top-bg: @killer-red;
+@top-text: @killer-black; //darken(@killer-grey, 30%);
+
+@top-bg: #262626;
+@top-text: darken(@killer-grey, 30%);
+
+@top-text-weight: 400;
+@top-accent: @killer-red;
+@top-border-bottom: 1px solid @killer-black;
+
 // Text Colors
-@text-color:           @killer-white;
-@text-color-subtle:    rgba(255, 255, 255, 0.2);
-@text-color-highlight: hsl(0,0%,94%);
-@text-color-selected:  hsl(0,0%,100%);
+@text-color: @killer-white;
+@text-color-subtle: rgba(255, 255, 255, 0.2);
+@text-color-highlight: hsl(0, 0%, 94%);
+@text-color-selected:  hsl(0, 0%, 100%);
 
 @text-color-info:    @killer-blue;
-@text-color-success: hsl(140,  44%, 62%);
+@text-color-success: #73c990;
 @text-color-warning: desaturate(@killer-gold, 60%);
-@text-color-error:   hsl(  9, 100%, 64%);
+@text-color-error:   #ff6347;
 
 // Background colors
-@background-color-info:    @killer-blue;
+@background-color-info: @killer-blue;
 @background-color-success: @killer-green;
-@background-color-warning: hsl(32,   60%, 50%);
-@background-color-error:   hsl(0,    70%, 50%);
+@background-color-warning: #cc8533;
+@background-color-error: #d92626;
 
-@background-color-highlight: darken(@base-background-color, 5%);
-@background-color-selected:  lighten(@base-background-color, 10%);
-@app-background-color:       darken(@base-background-color, 5%);
+@background-color-highlight: @killer-blue; //darken(@base-background-color, 5%);
+@background-color-selected:  @killer-black;
+@app-background-color:  darken(@base-background-color, 5%);
 
 // Base colors
 @base-background-color: @killer-black;
-@base-border-color:     @killer-red;
+@base-border-color:     #333;
 
 // Component colors
 @pane-item-background-color: @base-background-color;
@@ -84,7 +94,7 @@
 @ui-site-color-5: #EBDD5B;             // yellow
 
 // Sizes
-@font-size: 12px;
+@font-size: 11.5px;
 @input-font-size: 14px;
 
 @disclosure-arrow-size: 12px;
@@ -98,4 +108,4 @@
 
 // Misc
 @component-border-radius: 2px;
-@font-family: 'Avenir', 'Source Sans Pro', 'Avenir Next', 'Segoe UI', 'Geneva', 'Helvetica', 'Arial', sans-serif;
+@font-family: 'Avenir Next';

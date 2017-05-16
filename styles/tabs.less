@@ -6,34 +6,57 @@
 // Overrides: atom/tabs
 
 .tab-bar {
-  background-color: @killer-black;
-  padding: 0px 10px 0px;
+  background-color: @top-bg;
   overflow: hidden;
-  min-height: 39px;
-  border-bottom: 1px solid fadeout(@tab-border-color, 10%);
+  border-radius: 0;
+  position: relative;
+  z-index: 100;
+  min-height: 38px;
+  padding-left: 2px;
+  border-bottom: @top-border-bottom;
 
   .tab {
-    height: @tab-height + 4px;
-    margin-top: 4px;
-    margin-right:2px;
-    
+    height: @tab-height + 6;
+    margin-top: 1px;
+    margin-right: 3px;
+    padding-top: 1px;
     position: relative;
+    top: 0;
     
     border-radius: 0px;
     cursor: pointer;
     
-    color: @text-color;
+    color: @top-text;
+    background-color: transparent;
+
     text-align: center;
     line-height: @tab-height + 4px;
     font-size: 12.5px;
-    background-color: @tab-background-color;
     transition: all 0.3s;
+    
+    &[data-type="TreeView"] {
+      &, &.active {
+        &::before {
+          content: '☯ \00a0 \00a0 Project';
+          display: inline;
+        }
+        background-color: transparent;
+        border: none;
+        text-align: left;
+        color: #555;
+        text-transform: uppercase;
+      }
+    }
+    
+    
     &.active {
-      color: @killer-white;
-      background-color: @killer-red;
+      color: @text-color;
+      background-color: @tab-background-color;
+      border-top: 2px solid @top-accent;
+      
       &:hover {
-        color: @killer-black;
-        background-color: @killer-red;
+        color: @killer-white;
+        background-color: @killer-black;
       }
     }
     &:hover {

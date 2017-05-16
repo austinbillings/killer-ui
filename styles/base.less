@@ -11,16 +11,30 @@
 body {
   font-size: @font-size;
   color: @text-color;
-  padding-top: 2px;
+  border: 1px solid #333;
+  border-radius: 5px;
   background-color: @app-background-color;
 }
 
 atom-pane {
   border-right: 1px solid @base-border-color;
-  padding-top: 0px;
   background-color: @app-background-color;
   &:last-child {
     border-right: none;
+  }
+}
+atom-panel div.title-bar {
+  background-color: @top-bg;
+  border-bottom: none;
+  height: 25px;
+  
+  .title {
+    overflow: visible;
+    position:relative;
+    // font-family: 'Inconsolata';
+    font-size: 0.95em;
+    opacity: 0.5;
+    top: 1px;
   }
 }
 
