@@ -27,7 +27,7 @@
     cursor: pointer;
     
     color: @top-text;
-    background-color: transparent;
+    background-color: rgba(0,0,0,0.08);
 
     text-align: center;
     line-height: @tab-height + 4px;
@@ -43,7 +43,7 @@
         background-color: transparent;
         border: none;
         text-align: left;
-        color: #555;
+        color: @top-text;
         text-transform: uppercase;
       }
     }
@@ -53,6 +53,8 @@
       color: @text-color;
       background-color: @tab-background-color;
       border-top: 2px solid @top-accent;
+      border-bottom: 0;
+      top: 1px;
       
       &:hover {
         color: @killer-white;
