@@ -25,10 +25,16 @@ atom-text-editor[mini] {
   }
 }
 
+atom-text-editor {
+  .selection .region {
+    background-color: rgba(255,255,255,0.03);
+  }
+}
+
 atom-text-editor .gutter .line-number {
   padding-left: 10px !important;
-  padding-right: 0px;
-  
+  padding-right: 3px;
+
   &.cursor-line {
     background-color: @killer-black;
   }
@@ -40,23 +46,21 @@ atom-text-editor .gutter .line-number {
 }
 
 atom-text-editor .gutter {
-    color: darken(@killer-grey, 20%);
+    color: darken(@killer-grey, 25%);
     font-weight: 100;
-    padding-left: 3px;
-    color: #444;
-    background-color: lighten(@killer-black, 2%);
+    text-align: right;
+    width: auto;
+    background-color: lighten(@killer-black, 1%);
+
     &:first-child {
       border-right: 1px solid #171717;
-      margin-right: 10px;
     }
     &:last-child {
-      padding: 0px !important;
-      opacity: 0;
-      margin-left: -15px;
-      width: 0px;
+      padding: 0;
+      opacity: 0.4;
+      margin-left: 0px;
     }
 }
 
 atom-text-editor {
-  line-height: 1.6em;
 }
