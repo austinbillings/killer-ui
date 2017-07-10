@@ -22,7 +22,11 @@
 
 .list-tree, .list-group {
   li:not(.list-nested-item):not(.tabBlender), li.list-nested-item > .list-item {
-    color: @text-color;
+    color: darken(@text-color, 20%);
+    font-weight: 300;
+    &.selected {
+      color: #EFEFEF;
+    }
   }
 }
 
@@ -32,7 +36,7 @@
     text-shadow: 0px 0px 4px rgba(255,255,255,0.3);
     //color: @b;
     //font-weight: bold;
-    color: white !important;
+    // color: white !important;
     &>.header.list-item {
       color: @killer-white;
     }

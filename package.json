@@ -1,8 +1,9 @@
 {
   "name": "killer-ui",
   "theme": "ui",
-  "version": "2.0.0",
-  "description": "Dark, muted neutrals with splashes of red, teal, and gold. Delicious.",
+  "author": "Austin Billings <austin@austinbillings.com>",
+  "version": "2.1.0",
+  "description": "Killer UI theme for Atom: Jungle Candy Colors with sharp greys and warm style",
   "keywords": [
     "ui",
     "theme"

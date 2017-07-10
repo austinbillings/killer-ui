@@ -23,10 +23,10 @@
     padding-top: 1px;
     position: relative;
     top: 0;
-    
+
     border-radius: 0px;
     cursor: pointer;
-    
+
     color: @top-text;
     background-color: rgba(0,0,0,0.08);
 
@@ -34,11 +34,11 @@
     line-height: @tab-height + 4px;
     font-size: 12.5px;
     transition: all 0.3s;
-    
+
     &[data-type="TreeView"] {
       &, &.active {
         &::before {
-          content: '☯ \00a0 \00a0 Project';
+          content: @treeview-title;
           display: inline;
         }
         background-color: transparent;
@@ -48,15 +48,15 @@
         text-transform: uppercase;
       }
     }
-    
-    
+
+
     &.active {
       color: @text-color;
       background-color: @tab-background-color;
       border-top: 2px solid @top-accent;
       border-bottom: 0;
       top: 1px;
-      
+
       &:hover {
         color: @killer-white;
         background-color: @killer-black;

@@ -1,24 +1,20 @@
 // UI Variables
 // -------------------
 
-// These are the official UI variables that every UI theme should define.
-// It allows other packages to match your theme.
-
-// Overrides: atom/static/variables/ui-variables.less
-
-// Try to edit some of the values below to see your theme change.
-// A good start is to change the color of the `@base-background-color` variable.
-
 @killer-red: #bb131d;// #b30826; //#bc3424;
 @killer-gold: #e3a01a;
-@killer-black: #0d0c0b;
-@killer-green: #087041;
+@killer-black: #0d0c0c;
+@killer-green: #7e9d3e; // #087041;
 @killer-grey: #bba5a0;
 @killer-blue: #246962;
 @killer-white: #c9c4c5;
 
 @handle-size: 20px;
 
+// Misc
+@component-border-radius: 2px;
+@font-family: 'Avenir Next', 'Avenir', 'Josefin Sans', 'Gill Sans', 'Gill Sans MT', 'Geneva', 'Segoe UI', 'Tahoma', sans-serif;
+@treeview-title: '☯ \00a0 \00a0 Project';
 // Tab / Top Area
 @top-bg: @killer-red;
 @top-text: @killer-black; //darken(@killer-grey, 30%);
@@ -26,8 +22,8 @@
 // @top-bg: #262626;
 // @top-text: darken(@killer-grey, 30%);
 
-@top-text-weight: 400;
-@top-accent: @killer-red;
+@top-text-weight: 100;
+@top-accent: darken(@killer-red, 10%);
 @top-border-bottom: 1px solid @killer-black;
 
 // Text Colors
@@ -49,7 +45,7 @@
 
 @background-color-highlight: @killer-blue; //darken(@base-background-color, 5%);
 @background-color-selected:  @killer-black;
-@app-background-color:  darken(@base-background-color, 10%);
+@app-background-color:  @killer-black;
 
 // Base colors
 @base-background-color: @killer-black;
@@ -107,7 +103,3 @@
 @component-line-height: 25px;
 
 @tab-height: 30px;
-
-// Misc
-@component-border-radius: 2px;
-@font-family: 'Avenir Next';
