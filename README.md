@@ -1,5 +1,7 @@
 # Killer UI
 
+*A dark Atom theme featuring candy jungle colors with sharp greys and warm style.*
+
 **Killer UI** theme, by Austin Billings. Made for use with the [Killer Syntax](https://github.com/austinbillings/killer-syntax) theme.
 
 ## Optimal Fonts
