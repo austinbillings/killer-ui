@@ -4,9 +4,31 @@
 
 // Used to color git status
 
-.status          { color: black; }
-.status-added    { color: @killer-blue !important; } // green
-.status-ignored  { color: @killer-grey !important; }  // faded
-.status-modified { color: desaturate(lighten(@killer-red, 10%), 25%) !important; }
-.status-removed  { color: @text-color-error !important; }
-.status-renamed  { color: @text-color-info !important; }
+@_text: #e0e0e0;
+@offset: 1.4px 1.4px;
+@blur: 0.15px;
+
+.status {
+  color: @_text !important;
+  text-shadow: @offset @blur white;
+}
+.status-added {
+  color: @_text !important;
+  text-shadow: @offset @blur @killer-green !important;
+}
+.status-ignored {
+  color: @_text !important;
+  text-shadow: @offset @blur lighten(@killer-grey, 70%) !important;
+}
+.status-modified {
+  color: @_text !important;
+  text-shadow: @offset @blur desaturate(lighten(@killer-blue, 0%), 0%) !important;
+}
+.status-removed {
+  color: @_text !important;
+  text-shadow: @offset @blur @text-color-error !important;
+}
+.status-renamed {
+  color: @_text !important;
+  text-shadow: @offset @blur @text-color-info !important;
+}
