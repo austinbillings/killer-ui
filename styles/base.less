@@ -28,11 +28,11 @@ atom-panel div.title-bar {
   height: 25px;
 
   .title {
-    overflow: visible;
-    position:relative;
-    font-size: 0.95em;
     opacity: 1;
-    top: 1px;
+    color: @top-text;
+    font-size: 0.9em;
+    font-weight: 400;
+    overflow: visible;
   }
 }
 
@@ -49,18 +49,18 @@ div.atom-dock-resize-handle.left.atom-dock-resize-handle-resizable {
 
 /*      SCROLLBARZ      */
 ::-webkit-scrollbar {
-    width: 5px;
-	  height:5px;
+  width: 10px;
+  height:5px;
 }
 ::-webkit-scrollbar-track {
-    //-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-    border-radius: 0px;
+  //-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  border-radius: 0px;
 }
 ::-webkit-scrollbar-thumb {
     border-radius: 0px;
     //background: fadeout(@brand, 10%);
-    background: fadeout(#fff,90%);
-    box-shadow: 0px 0px 10px fadeout(@killer-red,80%);
+    background: fadeout(@killer-grey, 95%);
+    // box-shadow: 0px 0px 10px fadeout(@killer-red,80%);
     //-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
 }
 ::-webkit-scrollbar-thumb:window-inactive {

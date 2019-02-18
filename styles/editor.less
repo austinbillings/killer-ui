@@ -6,10 +6,11 @@ atom-text-editor[mini] {
   padding-left: @component-padding/2;
   color: @killer-green;
   border-radius: 4px;
-  padding: 6px;
-  line-height: 1em;
-  height: auto !important;
-  border: 1px solid rgba(255,255,255,0.1);
+  padding: 6px 6px 5px;
+  line-height: 1.3em;
+  overflow: visible;
+  min-height: @input-font-size * 2.5;
+  // border: 1px solid rgba(255,255,255,0.2);
   background-color: darken(@input-background-color, 10%);
 
   &.is-focused {
@@ -21,6 +22,7 @@ atom-text-editor[mini] {
     .placeholder-text {
       color: @text-color-subtle;
     }
+
     .selection .region {
       background-color: rgba(255,255,255,0.1);
     }
@@ -28,6 +30,8 @@ atom-text-editor[mini] {
 }
 
 atom-text-editor {
+  background-color: @killer-black;
+
   .selection .region {
     background-color: rgba(255,255,255,0.03);
   }
