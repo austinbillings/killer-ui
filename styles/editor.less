@@ -33,7 +33,7 @@ atom-text-editor {
   background-color: @killer-black;
 
   .selection .region {
-    background-color: rgba(255,255,255,0.03);
+    background-color: rgba(255,255,255,0.05);
   }
 
   .wrap-guide {
@@ -41,12 +41,17 @@ atom-text-editor {
   }
 
   .scroll-view {
-    padding-left: 10px;
+    padding-left: 25px;
+
+    .vertical-scrollbar {
+        box-shadow: 0 5px @killer-black;
+    }
   }
 
   .gutter {
     color: lighten(@killer-black, 20%);
-    background-color: transparent; //lighten(@killer-black, 1%);
+    background-color: rgb(9, 9, 9);
+    margin-right: -15px;
 
     .line-number {
       padding-left: 10px !important;
